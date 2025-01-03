@@ -1,0 +1,81 @@
+:focus { outline: thick dotted }
+:any-link { color: unset }
+:any-link:hover { text-decoration-style: double }
+
+* { box-sizing: border-box }
+li { margin-block: 2ex }
+ol { 
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+}
+ol > li { flex-basis: calc(100% / 3) }
+.cross > li { flex-basis: 50% }
+.cross > :nth-child(1) { order: 1 }
+.cross > :nth-child(2) { order: 3 }
+.cross > :nth-child(3) { order: 5 }
+.cross > :nth-child(4) { order: 7 }
+.cross > :nth-child(5) { order: 9 }
+.cross > :nth-child(6) { order: 11 }
+.cross > :nth-child(7) { order: 2 } 
+.cross > :nth-child(8) { order: 4 }
+.cross > :nth-child(9) { order: 6 }
+.cross > :nth-child(10) { order: 8 }
+.cross > :nth-child(11) { order: 10 }
+.cross > :nth-child(12) { order: 12 }
+
+p {
+  max-width: 30em;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: max(3ch, 4vmin);
+  line-height: 1.618;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+footer,
+header {
+  contain: content;
+  display: flow-root;
+  padding: 1em;
+}
+
+h1 {
+  font-weight: unset;
+	font-size: 1.382em;
+	margin: 0;
+}
+
+h2 {
+  font-weight: unset;
+	font-size: 1.236em;
+	margin: 0;
+}
+
+article {
+  contain: content;
+  display: flex;
+  flex-flow: column;
+}
+
+dl {
+  min-height: 12em;
+  padding: 1ex 1ch;
+}
+
+figure {
+  margin: 0;
+  padding: 1em;
+}
+
+figcaption { 
+  font-size: 1.236rem;
+}
